@@ -37,11 +37,16 @@ while True:
 
   # Ecriture du mot de passe hashé et salé dans un fichier
 
-  fichier = open('fichier.txt','a')
+  fichier = open('fichier.json','a')
 
   fichier.write(password_hash)
   
   to_continue= input ("Souhaitez-vous ajouter de nouveaux mots de passe ? (oui/non) : ")
+
+  afficher_mdp = input ("Souhaitez-vous ajouter de nouveaux mots de passe ? (oui/non) :")
+
+  if afficher_mdp == "oui" or afficher_mdp == "Oui" or afficher_mdp == "OUI":
+      open('fichier.json')
  
   if to_continue == "non" or to_continue == "Non" or to_continue == "NON":
      break
