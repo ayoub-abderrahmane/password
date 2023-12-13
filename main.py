@@ -3,7 +3,7 @@ import secrets
 import json
 import random
 
-stockage = []
+stockage = {}
 
 def generate_password():
     
